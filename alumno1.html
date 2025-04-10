@@ -8,16 +8,40 @@
 <body>
     <h1><b>Hola, soy el Alumno A</b></h1>
     <h2><b>Estudiante de Programación Web</b></h2>
-    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fkinsta.com%2Fes%2Fblog%2Fhtml-vs-html5%2F&psig=AOvVaw2_spWo34CSUZAI5XdLmzyg&ust=1744391587474000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJifmZn7zYwDFQAAAAAdAAAAABAE">
-    <p>>¡Bienvenido a mi perfil! Por favor, completa este formulario para conocerte mejor</p>
+    <img src="https://www.lowi.es/blog/wp-content/uploads/2023/05/como-buscar-en-google-por-imagenes.jpg" alt="Imagen de Alumno A" width="150" height="150">
+    <p>¡Bienvenido a mi perfil! Por favor, completa este formulario para conocerte mejor</p>
     <br>
-    <form action="alumno1.html" method="post">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre"><br>
-        <label for="apellido">Apellido:</label><br>
-        <input type="text" id="apellido" name="apellido"><br>
+    <form action="alumno2.html" method="get">
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
         <label for="edad">Edad:</label><br>
-        <input type="number" id="edad" name="edad"><br><br>
-        <input type="submit" value="Enviar">
+        <input type="number" min=1 id="edad" name="edad"><br><br>
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="text" id="correo" name="correo"><br>
+        <p>¿Eres nuevo en Programación?</p>
+        <input type="radio" id="si" name="nuevo" value="si">
+        <label for="si">Sí</label><br>
+        <input type="radio" id="no" name="nuevo" value="no">
+        <label for="no">No</label><br>
+        <p>¿Qué lenguaje te interesa?</p>
+        <input type="text" id="lenguaje" name="lenguaje"><br>
+        <p>Temas que te gustaría aprender:</p>
+        <input type="checkbox" id="html" name="temas" value="html">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="temas" value="css">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="js" name="temas" value="js">
+        <label for="js">JavaScript</label><br>
+        <p>¿Por qué te interesa la programación?</p>
+        <textarea id="interes" name="interes" rows="4" cols="50"></textarea><br><br>
+        <p>¿En qué horario prefieres estudiar?</p>
+        <select id="horario" name="horario">
+            <option value="mañana">Mañana</option>
+            <option value="tarde">Tarde</option>
+            <option value="noche">Noche</option><br><br>
+        </select><br><br>
+        <input type="submit" value="Enviar y ver perfil del Alumno B">
+        <p>Alumno A - 2025</p>
+    </form>
 </body>
 </html>
